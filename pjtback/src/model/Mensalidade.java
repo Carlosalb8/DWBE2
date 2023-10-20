@@ -1,4 +1,4 @@
-package model;
+package dwbe.projetoacademia.model;
 
 import java.util.Date;
 
@@ -80,5 +80,3 @@ public class Mensalidade {
                 '}';
     }
 }
-
-
