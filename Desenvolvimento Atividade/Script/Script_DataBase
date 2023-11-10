@@ -1,0 +1,58 @@
+CREATE DATABASE academiasql;
+
+CREATE TABLE PESSOA
+(
+CodigoId INT Primary Key,
+Nome VARCHAR (200),
+RG VARCHAR (10),
+CPF VARCHAR (11),
+DataDeNascimento VARCHAR (10),
+CEP VARCHAR (11),
+Endereço VARCHAR (200),
+Telefone (VARCHAR) (15)
+);
+
+
+CREATE TABLE MENSALIDADE
+(
+CodigoId INT Primary Key,
+Aluno VARCHAR (200),
+DataMatricula DATETIME,
+ValorMensalidade DECIMAL (10, 2),
+DataDePagamento DATE,
+ValorPagamento DECIMAL (10,2),
+);
+
+CREATE TABLE ALUNO
+(
+Alunon ID INT Primary Ky
+Atestado_Medico VARCHAR (MAX)
+);
+
+CREATE TABLE Professor
+(
+Modalidade VARCHAR (200),
+CargaHoraria INT,
+Periodo VARCHAR (50),
+);
+
+CREATE TABLE SERVICO
+(
+CodigoId INT Primary Key,
+Tipo VARCHAR (200),
+Valor DECIMAL (10,2),
+CPF VARCHAR (11),
+Duração TIME,
+Quantidade_Aluno INT,
+Plano VARCHAR (200),
+);
+
+CREATE TABLE Turma
+(
+CodigoId INT Primary Key,
+Descrição VARCHAR (200),
+ServicoAssociado VARCHAR (10,2),
+Duracao TIME,
+Aluno VARCHAR (200),
+Professor VARCHAR (200),
+);

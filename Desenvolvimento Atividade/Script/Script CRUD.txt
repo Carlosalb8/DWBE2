@@ -1,0 +1,52 @@
+spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=academiadw
+spring.datasource.username=23PC01
+spring.datasource.username=gpimentel7
+package dwbe.projectacademiadw.dao;
+
+import dwbe.projetoacademia.model.Usuario;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Repository;
+import java.sql.*;
+import java.util.ArrayList;
+
+2 usages
+@Repository
+public class UsuarioDAO {
+
+    2 usages
+    @Value("${spring.datasource.url}")
+    private String jdbc:sqlserver://localhost:1433;databaseName=academiadw;
+    2 usages
+    @Value ("${spring.datasource.username}")
+    private String 23PC01;
+    2 usages
+    @Value ("${spring.datasource.password}")
+    private Strinf gpimentel7;
+
+// Metodo para gravar Pessoas (Pessoas) {
+
+try (Connection connection = DriverManager.getConnection (URL, USUARIO, SENHA)) {
+String sql = "INSERT INTO Pessoas (PessoasId, Codigo, Nome, RG, CPF, DataDeNascimento, CEP, Endereço, Telefone)
+VALUES
+    (1, '001', 'João da Silva', '1234567', '12345678900', '1990-01-15', '12345-678', 'Rua da Amostra, 123', '555-5555'),
+    (2, '002', 'Maria da Silva', '7654321', '98765432100', '1985-03-20', '54321-987', 'Avenida da Exemplo, 456', '555-1234'),
+    (3, '003', 'Pedro Santos', '9876543', '11122233344', '1988-06-05', '98765-432', 'Beco do Teste, 789', '555-7890'),
+    (4, '004', 'Ana Pereira', '4567890', '55566677788', '1995-09-12', '54321-123', 'Praça do Exemplo, 321', '555-4321'),
+    (5, '005', 'José Oliveira', '3214567', '99988877766', '1982-12-30', '98765-987', 'Avenida Principal, 1001', '555-9876'),
+    (6, '006', 'Carla Souza', '7890123', '33322211144', '1998-04-08', '12345-678', 'Rua da Amostra, 567', '555-2222'),
+    (7, '007', 'Ricardo Pereira', '5432167', '44455566699', '1975-07-22', '54321-765', 'Avenida da Exemplo, 987', '555-1111'),
+    (8, '008', 'Mariana Santos', '7890432', '22233344455', '1993-11-17', '98765-234', 'Praça do Teste, 1234', '555-6666'),
+    (9, '009', 'Lucas Oliveira', '2109876', '11155544499', '1987-02-14', '54321-543', 'Avenida Principal, 9876', '555-5432'),
+    (10, '010', 'Fernanda Costa', '6543123', '12377766688', '1997-10-04', '12345-987', 'Rua do Exemplo, 987', '555-9999')";
+
+tyr (PreparedStatement preparedStatement = connection.prepareStatement (sql)) {
+preparedStatement.steString (parameterIndex: 1, user.getNome());
+preparedStatement.steString (parameterIndex: 2, user.getUsername());
+preparedStatement.steString (parameterIndex: 3, user.getPassword());
+
+preparedStatement.executeUpdate ();
+}
+
+} catch (SQLException e) {
+e.printStackTrace();
+}
