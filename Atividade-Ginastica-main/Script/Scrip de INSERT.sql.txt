@@ -1,0 +1,108 @@
+INSERT INTO Pessoas (PessoasId, Codigo, Nome, RG, CPF, DataDeNascimento, CEP, Endereço, Telefone)
+VALUES
+    (1, '001', 'João da Silva', '1234567', '12345678900', '1990-01-15', '12345-678', 'Rua da Amostra, 123', '555-5555'),
+    (2, '002', 'Maria da Silva', '7654321', '98765432100', '1985-03-20', '54321-987', 'Avenida da Exemplo, 456', '555-1234'),
+    (3, '003', 'Pedro Santos', '9876543', '11122233344', '1988-06-05', '98765-432', 'Beco do Teste, 789', '555-7890'),
+    (4, '004', 'Ana Pereira', '4567890', '55566677788', '1995-09-12', '54321-123', 'Praça do Exemplo, 321', '555-4321'),
+    (5, '005', 'José Oliveira', '3214567', '99988877766', '1982-12-30', '98765-987', 'Avenida Principal, 1001', '555-9876'),
+    (6, '006', 'Carla Souza', '7890123', '33322211144', '1998-04-08', '12345-678', 'Rua da Amostra, 567', '555-2222'),
+    (7, '007', 'Ricardo Pereira', '5432167', '44455566699', '1975-07-22', '54321-765', 'Avenida da Exemplo, 987', '555-1111'),
+    (8, '008', 'Mariana Santos', '7890432', '22233344455', '1993-11-17', '98765-234', 'Praça do Teste, 1234', '555-6666'),
+    (9, '009', 'Lucas Oliveira', '2109876', '11155544499', '1987-02-14', '54321-543', 'Avenida Principal, 9876', '555-5432'),
+    (10, '010', 'Fernanda Costa', '6543123', '12377766688', '1997-10-04', '12345-987', 'Rua do Exemplo, 987', '555-9999'),
+    (11, '011', 'Gustavo Santos', '8901234', '33344455522', '1992-08-18', '98765-765', 'Beco da Amostra, 654', '555-7654'),
+    (12, '012', 'Larissa Pereira', '4321987', '44433322211', '1991-03-27', '54321-876', 'Avenida da Teste, 111', '555-4321'),
+    (13, '013', 'Roberto Silva', '8765432', '22266655544', '1996-05-09', '12345-765', 'Praça do Exemplo, 555', '555-1987'),
+    (14, '014', 'Sandra Costa', '1230987', '55544433322', '1980-12-02', '98765-321', 'Rua do Teste, 987', '555-6543'),
+    (15, '015', 'Paulo Oliveira', '5678901', '11177755544', '1989-09-21', '54321-876', 'Avenida Principal, 876', '555-7890'),
+    (16, '016', 'Cristina Santos', '1098765', '12333366611', '1994-07-14', '12345-543', 'Beco da Exemplo, 765', '555-5678'),
+    (17, '017', 'Rodrigo Pereira', '6543210', '22255544499', '1984-11-27', '98765-432', 'Praça da Amostra, 876', '555-1234'),
+    (18, '018', 'Renata Silva', '2109876', '55533366611', '1983-02-08', '54321-198', 'Rua do Teste, 123', '555-4321'),
+    (19, '019', 'Carlos Costa', '8765432', '11166644499', '1981-06-15', '12345-765', 'Avenida da Exemplo, 555', '555-7654'),
+    (20, '020', 'Luis Santos', '4321098', '44455533322', '1999-03-04', '98765-321', 'Beco do Teste, 198', '555-1987');
+
+
+INSERT INTO Mensalidade (MensalidadeId, Aluno, DataMatricula, ValorMensalidade, DataDePagamento, ValorPagamento, PessoasId)
+VALUES
+    (1, 'João da Silva', '15-01-2023', 100.00, '05-02-2023', 100.00, 1),
+    (2, 'Maria da Silva', '20-02-2023', 100.00, '05-03-2023', 100.00, 2),
+    (3, 'Pedro Santos', '05-03-2023', 100.00, '10-04-2023', 100.00, 3),
+    (4, 'Ana Pereira', '12-04-2023', 100.00, '15-05-2023', 100.00, 4),
+    (5, 'José Oliveira', '30-05-2023', 100.00, '25-06-2023', 100.00, 5),
+    (6, 'Carla Souza', '08-04-2023', 100.00, '10-05-2023', 100.00, 6),
+    (7, 'Ricardo Pereira', '22-07-2023', 100.00, '05-08-2023', 100.00, 7),
+    (8, 'Mariana Santos', '17-11-2023', 100.00, '05-12-2023', 100.00, 8),
+    (9, 'Lucas Oliveira', '14-02-2023', 100.00, '05-03-2023', 100.00, 9),
+    (10, 'Fernanda Costa', '04-10-2023', 100.00, '05-11-2023', 100.00, 10);
+
+INSERT INTO ALUNO (AlunoId, Atestado_Medico, PessoasId)
+VALUES
+    (1, 'João da Silva', 1),
+    (2, 'Maria da Silva', 2),
+    (3, 'Pedro Santos', 3),
+    (4, 'Ana Pereira', 4),
+    (5, 'José Oliveira', 5),
+    (6, 'Carla Souza', 6),
+    (7, 'Ricardo Pereira', 7),
+    (8, 'Mariana Santos', 8),
+    (9, 'Lucas Oliveira', 9),
+    (10, 'Fernanda Costa', 10),
+    (11, 'Gustavo Silva', 11),
+    (12, 'Larissa Pereira', 12),
+    (13, 'Roberto Santos', 13),
+    (14, 'Sandra Oliveira', 14),
+    (15, 'Paulo Costa', 15),
+    (16, 'Cristina Silva', 16),
+    (17, 'Rodrigo Santos', 17),
+    (18, 'Renata Pereira', 18),
+    (19, 'Carlos Oliveira', 19),
+    (20, 'Luis Costa', 20);
+
+INSERT INTO PROFESSOR (ProfessorId, Modalidade, CargaHoraria, Periodo, PessoasId)
+VALUES
+    (1, 'Yoga', 20, 'Manhã', 1),
+    (2, 'Artes Marciais', 25, 'Tarde', 2),
+    (3, 'Dança', 18, 'Noite', 3),
+    (4, 'Música', 30, 'Manhã', 4),
+    (5, 'Educação Física', 20, 'Tarde', 5),
+    (6, 'Pilates', 22, 'Noite', 6),
+    (7, 'Natação', 24, 'Manhã', 7),
+    (8, 'Artes Cênicas', 28, 'Tarde', 8),
+    (9, 'Judô', 26, 'Noite', 9),
+    (10, 'Futebol', 30, 'Manhã', 10),
+    (11, 'Ginástica', 18, 'Tarde', 11),
+    (12, 'Karatê', 25, 'Noite', 12),
+    (13, 'Teatro', 20, 'Manhã', 13),
+    (14, 'Ballet', 22, 'Tarde', 14),
+    (15, 'Musculação', 24, 'Noite', 15),
+    (16, 'Pintura', 28, 'Manhã', 16),
+    (17, 'Voleibol', 26, 'Tarde', 17),
+    (18, 'Basquetebol', 30, 'Noite', 18),
+    (19, 'Canto', 18, 'Manhã', 19),
+    (20, 'Atletismo', 25, 'Tarde', 20);
+
+INSERT INTO SERVICO (ServicoId, Tipo, Valor, CPF, Duração, Quantidade_Aluno, Plano)
+VALUES
+    (1, 'Aula de Yoga', 60.00, '12345678901', '01:00:00', 10, 'Mensal'),
+    (2, 'Treinamento de Musculação', 80.00, '23456789012', '02:00:00', 15, 'Anual'),
+    (3, 'Aula de Dança', 50.00, '34567890123', '00:45:00', 12, 'Mensal'),
+    (4, 'Aula de Natação', 70.00, '45678901234', '01:00:00', 8, 'Trimestral'),
+    (5, 'Treinamento Funcional', 75.00, '56789012345', '01:30:00', 10, 'Semestral'),
+    (6, 'Aula de Pilates', 70.00, '67890123456', '01:15:00', 8, 'Mensal'),
+    (7, 'Treinamento de Boxe', 75.00, '78901234567', '01:30:00', 10, 'Anual'),
+    (8, 'Aula de Ballet', 55.00, '89012345678', '00:45:00', 12, 'Mensal'),
+    (9, 'Aula de Futebol', 60.00, '90123456789', '01:00:00', 15, 'Trimestral'),
+    (10, 'Aula de Judô', 60.00, '01234567890', '01:00:00', 10, 'Semestral');
+
+INSERT INTO TURMA (TurmaId, Descrição, ServicoAssociado, Duracao, Aluno, Professor)
+VALUES
+    (1, 'Turma de Yoga', 'Aula de Yoga', '01:00:00', 'João da Silva', 'Professor Yoga'),
+    (2, 'Turma de Musculação', 'Treinamento de Musculação', '02:00:00', 'Maria da Silva', 'Professor Musculação'),
+    (3, 'Turma de Dança', 'Aula de Dança', '00:45:00', 'Pedro Santos', 'Professor Dança'),
+    (4, 'Turma de Natação', 'Aula de Natação', '01:00:00', 'Ana Pereira', 'Professor Natação'),
+    (5, 'Turma de Funcional', 'Treinamento Funcional', '01:30:00', 'José Oliveira', 'Professor Funcional'),
+    (6, 'Turma de Pilates', 'Aula de Pilates', '01:15:00', 'Carla Souza', 'Professor Pilates'),
+    (7, 'Turma de Boxe', 'Treinamento de Boxe', '01:30:00', 'Ricardo Pereira', 'Professor Boxe'),
+    (8, 'Turma de Ballet', 'Aula de Ballet', '00:45:00', 'Mariana Santos', 'Professor Ballet'),
+    (9, 'Turma de Futebol', 'Aula de Futebol', '01:00:00', 'Lucas Oliveira', 'Professor Futebol'),
+    (10, 'Turma de Judô', 'Aula de Judô', '01:00:00', 'Fernanda Costa', 'Professor Judô');
