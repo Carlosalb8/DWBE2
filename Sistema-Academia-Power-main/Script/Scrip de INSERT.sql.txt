@@ -1,0 +1,88 @@
+INSERT INTO ALUNO (AlunoId, Atestado_Medico, Status)
+VALUES
+    (1, 'Jo�o da Silva', 0),
+    (2, 'Maria da Silva', 0),
+    (3, 'Pedro Santos', 1),
+    (4, 'Ana Pereira', 2),
+    (5, 'Jos� Oliveira', 1),
+    (6, 'Carla Souza', 1),
+    (7, 'Ricardo Pereira', 2),
+    (8, 'Mariana Santos', 2),
+    (9, 'Lucas Oliveira', 1),
+    (10, 'Fernanda Costa', 1),
+    (11, 'Gustavo Silva', 0),
+    (12, 'Larissa Pereira', 0),
+    (13, 'Roberto Santos', 1),
+    (14, 'Sandra Oliveira', 0),
+    (15, 'Paulo Costa', 0),
+    (16, 'Cristina Silva', 2),
+    (17, 'Rodrigo Santos', 1),
+    (18, 'Renata Pereira', 2),
+    (19, 'Carlos Oliveira', 1),
+    (20, 'Luis Costa', 0);
+
+
+
+
+
+INSERT INTO Mensalidade (MensalidadeId, Aluno, DataMatricula, ValorMensalidade, DataDePagamento, ValorPagamento)
+VALUES
+    (1, 'Jo�o da Silva', '15-01-2023', 100.00, '05-02-2023', 100.00),
+    (2, 'Maria da Silva', '20-02-2023', 100.00, '05-03-2023', 100.00),
+    (3, 'Pedro Santos', '05-03-2023', 100.00, '10-04-2023', 100.00,
+    (4, 'Ana Pereira', '12-04-2023', 100.00, '15-05-2023', 100.00),
+    (5, 'Jos� Oliveira', '30-05-2023', 100.00, '25-06-2023', 100.00),
+    (6, 'Carla Souza', '08-04-2023', 100.00, '10-05-2023', 100.00),
+    (7, 'Ricardo Pereira', '22-07-2023', 100.00, '05-08-2023', 100.00),
+    (8, 'Mariana Santos', '17-11-2023', 100.00, '05-12-2023', 100.00),
+    (9, 'Lucas Oliveira', '14-02-2023', 100.00, '05-03-2023', 100.00),
+    (10, 'Fernanda Costa', '04-10-2023', 100.00, '05-11-2023', 100.00);
+
+INSERT INTO PROFESSOR (ProfessorId, Modalidade, CargaHoraria, Periodo)
+VALUES
+    (1, 'Yoga', 20, 'Manh�', 1),
+    (2, 'Artes Marciais', 25, 'Tarde', 2),
+    (3, 'Dan�a', 18, 'Noite', 3),
+    (4, 'M�sica', 30, 'Manh�', 4),
+    (5, 'Educa��o F�sica', 20, 'Tarde', 5),
+    (6, 'Pilates', 22, 'Noite', 6),
+    (7, 'Nata��o', 24, 'Manh�', 7),
+    (8, 'Artes C�nicas', 28, 'Tarde', 8),
+    (9, 'Jud�', 26, 'Noite', 9),
+    (10, 'Futebol', 30, 'Manh�', 10),
+    (11, 'Gin�stica', 18, 'Tarde', 11),
+    (12, 'Karat�', 25, 'Noite', 12),
+    (13, 'Teatro', 20, 'Manh�', 13),
+    (14, 'Ballet', 22, 'Tarde', 14),
+    (15, 'Muscula��o', 24, 'Noite', 15),
+    (16, 'Pintura', 28, 'Manh�', 16),
+    (17, 'Voleibol', 26, 'Tarde', 17),
+    (18, 'Basquetebol', 30, 'Noite', 18),
+    (19, 'Canto', 18, 'Manh�', 19),
+    (20, 'Atletismo', 25, 'Tarde', 20);
+
+INSERT INTO SERVICO (ServicoId, Tipo, Valor, CPF, Dura��o, Quantidade_Aluno, Plano)
+VALUES
+    (1, 'Aula de Yoga', 60.00, '12345678901', '01:00:00', 10, 'Mensal'),
+    (2, 'Treinamento de Muscula��o', 80.00, '23456789012', '02:00:00', 15, 'Anual'),
+    (3, 'Aula de Dan�a', 50.00, '34567890123', '00:45:00', 12, 'Mensal'),
+    (4, 'Aula de Nata��o', 70.00, '45678901234', '01:00:00', 8, 'Trimestral'),
+    (5, 'Treinamento Funcional', 75.00, '56789012345', '01:30:00', 10, 'Semestral'),
+    (6, 'Aula de Pilates', 70.00, '67890123456', '01:15:00', 8, 'Mensal'),
+    (7, 'Treinamento de Boxe', 75.00, '78901234567', '01:30:00', 10, 'Anual'),
+    (8, 'Aula de Ballet', 55.00, '89012345678', '00:45:00', 12, 'Mensal'),
+    (9, 'Aula de Futebol', 60.00, '90123456789', '01:00:00', 15, 'Trimestral'),
+    (10, 'Aula de Jud�', 60.00, '01234567890', '01:00:00', 10, 'Semestral');
+
+INSERT INTO TURMA (TurmaId, Descri��o, ServicoAssociado, Duracao, Aluno, Professor)
+VALUES
+    (1, 'Turma de Yoga', 'Aula de Yoga', '01:00:00', 'Jo�o da Silva', 'Professor Yoga'),
+    (2, 'Turma de Muscula��o', 'Treinamento de Muscula��o', '02:00:00', 'Maria da Silva', 'Professor Muscula��o'),
+    (3, 'Turma de Dan�a', 'Aula de Dan�a', '00:45:00', 'Pedro Santos', 'Professor Dan�a'),
+    (4, 'Turma de Nata��o', 'Aula de Nata��o', '01:00:00', 'Ana Pereira', 'Professor Nata��o'),
+    (5, 'Turma de Funcional', 'Treinamento Funcional', '01:30:00', 'Jos� Oliveira', 'Professor Funcional'),
+    (6, 'Turma de Pilates', 'Aula de Pilates', '01:15:00', 'Carla Souza', 'Professor Pilates'),
+    (7, 'Turma de Boxe', 'Treinamento de Boxe', '01:30:00', 'Ricardo Pereira', 'Professor Boxe'),
+    (8, 'Turma de Ballet', 'Aula de Ballet', '00:45:00', 'Mariana Santos', 'Professor Ballet'),
+    (9, 'Turma de Futebol', 'Aula de Futebol', '01:00:00', 'Lucas Oliveira', 'Professor Futebol'),
+    (10, 'Turma de Jud�', 'Aula de Jud�', '01:00:00', 'Fernanda Costa', 'Professor Jud�');

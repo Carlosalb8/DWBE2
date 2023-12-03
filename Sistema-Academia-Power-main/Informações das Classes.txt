@@ -1,0 +1,211 @@
+Sistema – Academia de Ginástica
+
+Pasta Model
+– Aluno: A classe representa um aluno em uma academia. Possui os seguintes atributos: Aluno e Pessoa.
+
+. codigo: O identificador exclusivo do aluno.
+. nome: O nome do aluno.
+. rg: Número do documento de identidade do aluno.
+. cpf: Número de identificação fiscal do aluno.
+. dataNascimento: Data de nascimento do aluno.
+. cep: CEP do aluno.
+. endereco: Endereço do aluno.
+. telefone: Telefone do aluno.
+. atestadoMedico: Número do atestado médico do aluno.
+. status: O status do aluno, que pode ser um dos três valores (0: Ativo, 1: Cancelado, 2: Por defeito)
+
+A classe também tem os seguintes métodos: Aluno
+
+. getAtestadoMedico(): Retorna o número do atestado médico do aluno.
+. setAtestadoMedico(String atestadoMedico): Define o número do atestado médico do aluno.
+. getStatus(): Retorna o status do aluno.
+. setStatus(int status): Define o status do aluno.
+
+Mensalidade: que representa um pagamento de associação de academia. Possui os seguintes atributos: Mensalidade.
+
+. codigo: O identificador exclusivo do pagamento de associação.
+. aluno: O aluno a quem pertence o pagamento da adesão.
+. dataMatricula: A data em que o aluno se matriculou na academia.
+. valorMensalidade: A taxa de adesão mensal.
+. dataPagamento: A data em que o aluno pagou a taxa de adesão.
+. valorPagamento: O valor da taxa de adesão que o aluno pagou.
+
+A classe também tem os seguintes métodos: Mensalidade
+
+. getCodigo(): Retorna o identificador exclusivo do pagamento de associação.
+. setCodigo(int codigo): Define o identificador exclusivo do pagamento da associação.
+. getAluno(): Retorna o aluno a quem pertence o pagamento da associação.
+. setAluno(Aluno aluno): Define o aluno a quem pertence o pagamento da associação.
+. getDataMatricula(): Retorna a data em que o aluno se matriculou na academia.
+. setDataMatricula(Date dataMatricula): Define a data em que o aluno se matriculou na academia.
+. getValorMensalidade(): Devolve a taxa de adesão mensal.
+. setValorMensalidade(double valorMensalidade): Define a taxa de associação mensal.
+. getDataPagamento(): Devolve a data em que o estudante pagou a taxa de adesão.
+. setDataPagamento(Date dataPagamento): Define a data em que o aluno pagou a taxa de adesão.
+. getValorPagamento(): Devolve o valor da taxa de adesão que o aluno pagou.
+. setValorPagamento(double valorPagamento): Define o valor da taxa de associação que o aluno pagou.
+. toString(): Substitui o método para retornar uma representação String do objeto de pagamento de associação.toString()
+
+– Pessoa: representa uma pessoa. Possui os seguintes atributos: Pessoa.
+
+. codigo: O identificador exclusivo da pessoa.
+nome: O nome da pessoa.
+. rg: Número do documento de identidade da pessoa.
+. cpf: Número de identificação fiscal da pessoa.
+. dataNascimento: Data de nascimento da pessoa.
+. cep: CEP da pessoa.
+. endereco: O endereço da pessoa.
+. telefone: O número de telefone da pessoa.
+
+A classe também tem os seguintes métodos: Pessoa
+
+. getCodigo(): Retorna o identificador exclusivo da pessoa.
+. setCodigo(int codigo): Define o identificador exclusivo da pessoa.
+. getNome(): Devolve o nome da pessoa.
+. setNome(String nome): Define o nome da pessoa.
+. getRg(): Retorna o número do documento de identidade da pessoa.
+. setRg(String rg): Define o número do documento de identidade da pessoa.
+. getCpf(): Declara o número de identificação fiscal da pessoa.
+. setCpf(String cpf): Define o número de identificação fiscal da pessoa.
+. getDataNascimento(): Devolve a data de nascimento da pessoa.
+. setDataNascimento(Date dataNascimento): Define a data de nascimento da pessoa.
+
+. getCep(): Devolve o CEP da pessoa.
+. setCep(String cep): Define o CEP da pessoa.
+. getEndereco(): Retorna o endereço da pessoa.
+. setEndereco(String endereco): Define o endereço da pessoa.
+. getTelefone(): Devolve o número de telefone da pessoa.
+. setTelefone(String telefone): Define o número de telefone da pessoa.
+. toString(): Substitui o método para retornar uma representação String do objetopessoa.toString()
+
+– Professor: representa um instrutor de ginástica. Ele herda da classe, o que significa que ele tem todos os atributos e métodos da classe: Professor e Pessoa.
+
+A classe também tem os seguintes métodos:Professor
+
+. getModalidade(): Retorna o tipo de exercício em que o instrutor é especializado.
+. setModalidade(String modalidade): Define o tipo de exercício em que o instrutor se especializa.
+. getCargaHoraria(): retorna o número de horas por semana que o instrutor trabalha.
+. setCargaHoraria(int cargaHoraria): Define o número de horas por semana que o instrutor trabalha.
+. getPeriodos(): retorna uma lista dos períodos de tempo em que o instrutor trabalha.
+. adicionarPeriodo(String periodo): adiciona um período de tempo à lista de períodos de tempo que o instrutor trabalha.
+. removerPeriodo(String periodo): Remove um período de tempo da lista de períodos de tempo em que o instrutor trabalha.
+. toString(): Substitui o método para retornar uma representação String do objeto do instrutor de ginástica.toString()
+
+– Servico: Representa um serviço oferecido por uma academia. Possui os seguintes atributos: Servico.
+
+. codigo: O identificador exclusivo do serviço.
+tipo: O tipo de serviço (por exemplo, treinamento pessoal, aula de ginástica em grupo, etc.).
+.  valor: O preço do serviço.
+. duracao: A duração do serviço em minutos.
+. quantidadeDeAlunos: O número máximo de alunos que podem participar do serviço ao mesmo tempo.
+. plano: O plano de ginásio em que o serviço está incluído.
+
+A classe também tem os seguintes métodos:Servico
+
+. getCodigo(): Retorna o identificador exclusivo do serviço.
+. setCodigo(int codigo): Define o identificador exclusivo do serviço.
+. getTipo(): Retorna o tipo de serviço.
+. setTipo(String tipo): Define o tipo de serviço.
+. getValor(): Devolve o preço do serviço.
+. setValor(double valor): Define o preço do serviço.
+. getDuracao(): Retorna a duração do serviço em minutos.
+. setDuracao(int duracao): Define a duração do serviço em minutos.
+. getQuantidadeDeAlunos(): Retorna o número máximo de alunos que podem participar do serviço ao mesmo tempo.
+. setQuantidadeDeAlunos(int quantidadeDeAlunos): Define o número máximo de alunos que podem participar do serviço ao mesmo tempo.
+. getPlano(): Retorna o plano de academia no qual o serviço está incluído.
+. setPlano(String plano): Define o plano de ginásio no qual o serviço está incluído.
+. toString(): Substitui o método para retornar uma representação String do objeto de serviço.toString()
+
+– Turma: representa uma aula de ginástica em grupo oferecida por uma academia. Ele herda da classe, o que significa que ele tem todos os atributos e métodos da classe: Turma e Servico.
+
+. descricao: Uma descrição da classe.
+. duracaoMinutagem: A duração da aula em minutos.
+. alunos: Uma lista dos alunos matriculados na turma.
+. professor: O instrutor da turma.
+A classe também tem os seguintes métodos:Turma
+
+. getDescricao(): Retorna uma descrição da classe.
+. setDescricao(String descricao): Define uma descrição da classe.
+. getDuracaoMinutagem(): Devolve a duração da aula em minutos.
+. setDuracaoMinutagem(int duracaoMinutagem): Define a duração da aula em minutos.
+. getAlunos(): Retorna uma lista dos alunos matriculados na turma.
+. adicionarAluno(Aluno aluno): Adiciona um aluno à classe.
+. removerAluno(Aluno aluno): Remove um aluno da classe.
+. getProfessor(): Retorna o instrutor para a aula.
+. setProfessor(Professor professor): Define o instrutor para a aula.
+
+2 – Pasta Dao:
+
+2.1 – AlunoDAO: Esse método provavelmente é usado para executar alguma operação na tabela no banco de dados, como inserir, atualizar ou excluir um registro. 
+
+2.2 – MensalidadeDAO: Esse método provavelmente é usado para executar alguma operação na tabela no banco de dados, como inserir, atualizar ou excluir um registro. A classe fornece uma maneira conveniente de interagir com a tabela no banco de dados. Ele abstrai os detalhes da conexão de banco de dados e consultas SQL, para que o código do aplicativo possa se concentrar na lógica de negócios.
+2.3 – PessoaDAO: Esse método provavelmente é usado para executar alguma operação na tabela no banco de dados, como inserir, atualizar ou excluir um registro. Para armazenar as informações pessoais de todas as pessoas associadas à academia, como membros, funcionários e contratados. Essas informações podem incluir nome, endereço, número de telefone, endereço de e-mail e status de associação.
+2.4 – ProfessorDAO: Esse método provavelmente é usado para executar alguma operação na tabela no banco de dados, como inserir, atualizar ou excluir um registro. Fornece uma maneira simples e eficiente de interagir com o banco de dados e ajuda a garantir que os dados sejam precisos e atualizados.
+2.5 – ServicoDAO: Método provavelmente é usado para executar alguma operação na tabela no banco de dados, como inserir, atualizar ou excluir um registro. A tabela é provavelmente usada para armazenar informações sobre todos os serviços oferecidos pela academia, como treinamento pessoal, aulas de ginástica em grupo e massoterapia. Essas informações podem incluir o nome do serviço, descrição, preço e duração.
+2.6 – TurmaDAO: método provavelmente é usado para executar alguma operação na tabela no banco de dados, como inserir, atualizar ou excluir um registro. Para armazenar informações sobre todas as aulas de ginástica em grupo oferecidas pela academia. Essas informações podem incluir o nome da turma, descrição, duração, instrutor e horário.
+
+3 – Pasta Controller:
+
+3.1 – AlunoDTO: A classe seria usada para transferir dados entre a camada de apresentação e a camada de negócios de um sistema de gerenciamento de academia.
+
+A classe tem os seguintes atributos:AlunoDTO
+
+. codigo: O identificador exclusivo do aluno.
+. nome: O nome do aluno.
+. rg: Número do bilhete de identidade do estudante.
+. cpf: Número de identificação fiscal do aluno.
+. cep: Código postal do aluno.
+. endereco: Endereço do aluno.
+. telefone: Telefone do aluno.
+. atestadoMedico: Atestado médico do aluno.
+A classe também tem os seguintes getters e setters:AlunoDTO
+. getCodigo(): Retorna o identificador exclusivo do aluno.
+. setCodigo(int codigo): Define o identificador exclusivo do aluno.
+. getNome(): Devolve o nome do aluno.
+. setNome(String nome): Define o nome do aluno.
+. getRg(): Retorna o número da carteira de identidade do estudante.
+. setRg(String rg): Define o número do bilhete de identidade do estudante.
+. getCpf(): Retorna o número de identificação fiscal do aluno.
+. setCpf(String cpf): Define o número de identificação fiscal do aluno.
+. getCep(): Devolve o código postal do aluno.
+. setCep(String cep): Define o código postal do aluno.
+. getEndereco(): Retorna o endereço do aluno.
+. setEndereco(String endereco): Define o endereço do aluno.
+. getTelefone(): Devolve o número de telefone do aluno.
+. setTelefone(String telefone): Define o número de telefone do aluno.
+. getAtestadoMedico(): Devolução do atestado médico do aluno.
+. setAtestadoMedico(String atestadoMedico): Define o atestado médico do aluno.
+4 – Pasta Component:
+
+4.1 – FaturaMensal: Nesse caso, a aula representa uma fatura mensal para um membro da academia.
+A classe tem os seguintes atributos:FaturaMensal
+. numeroFatura: O número da fatura.
+. aluno: O aluno que está sendo cobrado.
+. dataVencimento: A data de vencimento da fatura.
+. valor: O valor da fatura.
+A classe também tem os seguintes getters e setters:FaturaMensal
+
+. getNumeroFatura(): Devolve o número da fatura.
+. setNumeroFatura(int numeroFatura): Define o número da fatura.
+. getAluno(): Devolve o aluno que está sendo cobrado.
+. setAluno(Aluno aluno): Define o aluno que está sendo cobrado.
+. getDataVencimento(): Devolve a data de vencimento da fatura.
+. setDataVencimento(Date dataVencimento): Define a data de vencimento da fatura.
+. getValor(): Devolve o valor da fatura.
+. setValor(double valor): Define o valor da fatura.
+
+5 – Pasta Service:
+
+5.1 – CadastroAlunoService: A classe é um serviço, que é uma classe que fornece funcionalidade para outros componentes de uma aplicação. No caso, o  fornece serviços para cadastrar, listar e remover alunos de uma academia.
+A classe  tem os seguintes atributos:CadastroAlunoService
+
+alunos: Uma lista para armazenar os alunos cadastrados.
+A classe também tem os seguintes métodos: “CadastroAlunoService”, logo abaixo:
+. cadastrarAluno(): Cadastra um novo aluno.
+. removeAluno(): Remove um aluno existente.
+. listarAlunos(): Lista todos os alunos cadastrados.
+. buscarAlunoPorCodigo(): Busca um aluno por código.
+6 – Pasta View:
+
+6.1 – Main: O código Java que você forneceu é para um método chamado Main (listas para armazenar alunos, professores e turmas).
+Este método cadastra um novo aluno, professor, turma, excluir aluno se não inadimplente, listar alunos, excluir professor, excluir turma, listar professores, listar turmas, matricular aluno na turma, encontrar aluno por código, listar alunos de turma, cancelar aluno, marcar aluno como inadimplante, pagar mensalidade e ativar aluno.
